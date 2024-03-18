@@ -222,3 +222,36 @@ input:focus{
 .homepage-banner-photo img{
     width: 100%;
 }
+
+.about-us{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    padding: 3rem 0;
+    background: rgb(241, 244, 241);
+    /* border: 2px solid black; */
+}
+.about-us-pic-box{
+    width: 50%;
+}
+.about-us-pic-box img{
+    width: 100%;
+}
+.about-us-text-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+    text-align: justify;
+    color: var(--dark-green);
+}
+.about-us-text-box h1{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.about-us-text-box p{
+    font-size: 1.1rem;
+    color: rgb(12, 161, 45);
+}
