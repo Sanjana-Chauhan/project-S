@@ -133,7 +133,7 @@ input:focus{
 }
 .signup-banner{
     width: 50%;
-    background: url(resources/signup-banner.jpg);
+    background: url(resources/img/signup-banner.jpg);
     background-size: cover;
 }
 /* sign up css ends */
@@ -144,7 +144,7 @@ input:focus{
     width: 100%;
 }
 .upper{
-    background:url("resources/banner-bg.png");
+    background:url("resources/img/banner-bg.png");
     background-position: bottom;
     background-size: cover;
 }
