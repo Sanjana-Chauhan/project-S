@@ -1,181 +1,208 @@
 @font-face {
-    font-family: "Poppins";
-    src: url("./resources/fonts/Poppins-Regular.ttf");
-  }
+  font-family: "Poppins";
+  src: url("./resources/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT-Hoves";
+  src: url("./resources/fonts/TT-Hoves-Regular.ttf");
+}
 
 body {
-    background-image: url("./resources/img/introbg.png");
+  background-image: url("./resources/img/introbg.png");
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
 }
 
-*{
-    font-family: "Poppins";
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .container {
-    position: relative;
-    width: calc(100% - 100px);
-    min-height: calc(100vh - 280px);
-    min-height: 300px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    margin-top: 60px;
+  position: relative;
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 280px);
+  min-height: 300px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 60px;
 }
 
 header {
-    position: fixed;
-    top: 10px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-    border-radius: 1rem;
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    z-index: 90;
-    width: calc(100% - 180px);
+  position: fixed;
+  top: 10px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 90;
+  width: calc(100% - 180px);
 }
 
 header .logo {
-    color: black;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 header ul {
-    display: flex;
+  display: flex;
 }
 
 header ul li {
-    list-style: none;
-    margin: 0 10px;
+  list-style: none;
+  margin: 0 10px;
 }
 
 header ul li a {
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    padding: 8px 15px;
-    border-radius: 1rem;
-    transition: 500ms ease;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 1rem;
+  transition: 500ms ease;
 }
 
-header ul li a:hover, header ul li a.highlight {
-    background: hsla(0, 0%, 100%, 1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+header ul li a:hover,
+header ul li a.highlight {
+  background: hsla(0, 0%, 100%, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.heading-container{
-    display: flex;
-    z-index: 1;
-    margin-top: 50px;
-    align-items: center;
+.heading-container {
+  display: flex;
+  z-index: 1;
+  margin-top: 50px;
+  align-items: center;
 }
 
-.main-heading{
-    font-size: 3rem;
-    color: black;
+.main-heading {
+  font-size: 3rem;
+  color: black;
 }
 
-.heading-content{
-    font-size: 1.5rem;
-    color: black;
-    line-height: 2.25rem;
+.heading-content {
+  font-size: 1.5rem;
+  color: black;
+  line-height: 2.25rem;
 }
 
-.highlight-green{
-    letter-spacing: 2px;
-    padding: 0 5px;
-    background: linear-gradient(to bottom, transparent 50%, #72fa66 50%);
+.highlight-green {
+  letter-spacing: 2px;
+  padding: 0 5px;
+  background: linear-gradient(to bottom, transparent 50%, #72fa66 50%);
 }
 
-.getting-started-btn{
-    display: inline-block;
-    padding: 0.9rem 1.8rem;
-    color: black;
-    margin-top: 20px;
-    margin-right: 10px;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    background: rgba(9, 192, 9, 0.5);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    transition: 500ms ease;
+.getting-started-btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  color: black;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(9, 192, 9, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: 500ms ease;
 }
 
-.getting-started-btn:hover{
-    background: #024c41;
-    color: #fff;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.05);
+.getting-started-btn:hover {
+  background: #024c41;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.05);
 }
 
-.profile-img{
-    max-width: 400px;
-    top: 5rem;
-    right: 15rem;
+.profile-img {
+  max-width: 400px;
+  top: 5rem;
+  right: 15rem;
 }
-
 
 /*Wave*/
 .wave {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-    display: inline-block;
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
 }
 
-
 @keyframes wave-animation {
-    0% {
-      transform: rotate(0deg);
-    }
-    10% {
-      transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-      transform: rotate(-8deg);
-    }
-    30% {
-      transform: rotate(14deg);
-    }
-    40% {
-      transform: rotate(-4deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    60% {
-      transform: rotate(0deg);
-    } /* Reset for the last half to pause */
-    100% {
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*Loader*/
+#loader {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #72fa66;
+}
+
+#l-c {
+  color: #eaeaea;
+}
+
+#counter {
+  font-family: TT-Hoves, sans-serif;
+  font-size: 100px;
+}
