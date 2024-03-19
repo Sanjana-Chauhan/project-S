@@ -3,10 +3,6 @@
     src: url("./resources/fonts/Poppins-Regular.ttf");
   }
 
-body {
-    background-image: url("./resources/img/introbg.png");
-}
-
 section {
     display: flex;
     justify-content: center;
@@ -24,6 +20,19 @@ section {
 
 div {
     display: block;
+}
+
+.section-1{
+    background-image: url("./resources/img/bg7.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .container {
@@ -109,12 +118,6 @@ header ul li a:hover, header ul li a.highlight {
     line-height: 2.25rem;
 }
 
-.highlight-green{
-    letter-spacing: 2px;
-    padding: 0 5px;
-    background: linear-gradient(to bottom, transparent 50%, #72fa66 50%);
-}
-
 .getting-started-btn{
     display: inline-block;
     padding: 0.9rem 1.8rem;
@@ -139,11 +142,9 @@ header ul li a:hover, header ul li a.highlight {
 .profile-img{
     max-width: 400px;
     top: 5rem;
-    right: 15rem;
+    right: 14rem;
 }
 
-
-/*Wave*/
 .wave {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s; /* Change to speed up or slow down */
@@ -179,3 +180,47 @@ header ul li a:hover, header ul li a.highlight {
       transform: rotate(0deg);
     }
   }
+
+
+/*Section 2*/
+
+.section-2{
+    background-image: url("./resources/img/bg1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.profile-img{
+    max-width: 400px;
+    top: 5rem;
+    right: 15rem;
+}
+
+.content-2{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    margin-inline: 50px;
+    margin-right: 0px;
+}
+
+.content-2 h2 {
+    font-size: 3rem;
+    color: black;
+}
+
+.highlight-pink {
+    letter-spacing: 2px;
+    padding: 0 5px;
+    background: linear-gradient(to bottom, transparent 50%, #ff6db7 50%);
+}
+
+.about-us-text{
+    color: #444444;
+    font-size: 20px;
+}

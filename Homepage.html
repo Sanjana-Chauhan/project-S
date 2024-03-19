@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="homepage-container">
-        <div class="upper">
-            <div class="navbar">
-                <div class="navbar-title">
-                    <img src="resources/img/logo.jpg" class="logo">
-                    <h1>Pro Planet Person</h1>
-                </div>
-                <div class="navbar-options-div">
-                        <ul class="navbar-options">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Explore</a></li>
-                            <li><a href="#">Activity</a></li>
-                            <li><a href="#">Eco-Assist</a></li>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Log-out</a></li>
-                        </ul>
+    <link rel="stylesheet" href="homepage.css">
+  </head>
+  <body>
+    <div class="section-1">
+    <section>
+        <div class="container">
+          <!--Navigation Bar-->
+          <header>
+            <div class="logo-container">
+                <img src="./resources/img/logo.png" alt="" class = "logo-img">
+            </div>    
+            <ul>
+              <li>
+                <a class="solo-button highlight" href="#" id="home-button">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="solo-button" id="about-button">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="solo-button" id="explore-button">Explore</a>
+              </li>
+              <li>
+                <a href="#" class="solo-button" id="activity-button">Activity</a>
+              </li>
+              <li>
+                <a href="#" class="solo-button" id="eco-assist-button">Eco-Assist</a>
+              </li>
+              <li>
+                <a href="#" class="solo-button" id="profile-button">Profile</a>
+              </li>
+              <li>
+                <a href="#" class="solo-button" id="logout-button">LogOut</a>
+              </li>
+            </ul>
+          </header>
+          <div class="heading-container">
+            <div class="content">
+  
+              <h2 class="main-heading">Pro Planet <span class="wave">👋</span></h2>
+              <p class="heading-content">Uniting for earth: Our mission to save our planet and create a better future!</p>
+            </div>
+            <div class="img">
+              <div class="profile-img">
+                  <img src="./resources/img/save-the-planet.png" alt="" class="image" />
                 </div>
             </div>
-            <div class="homepage-banner">
-                <div class="homepage-banner-text">
-                    <h1> Pro Planet</h1>
-                    <p><h2>Uniting For Earth: Our Mission To Save Our Planet And Create A
-                    Better Future! </h2></p>
-                    <p>Let's Begin Your Journey</p>
+          </div>
+        </div>
+    </section>
+</div>
+<div class="section-2">
+    <section>
+        <div id = "about" class="container">
+              <div class="heading-container">
+                <div class="img">
+                    <div class="profile-img">
+                        <img src="./resources/img/bg4.png" alt="" class="image" />
+                      </div>
+                  </div>
+              <div class="content-2">
+                  <h2 class = "about-us-heading">
+                    <span class="highlight-pink">About Us</span>
+                  </h2>
+                  <div>
+                    <p class = "about-us-text">A "pro-planet person" is like a guardian of the Earth,a passionate defender of all things green and blue.They're the eco-warriors.They're the ones who hug trees and high-five the wind.</p>
+                    <p class = "about-us-text">They're not just about recycling; they're about reimagining our relationship with the planet.</p>
+                    <p class = "about-us-text">In essence, a pro-planet person is someone who sees Earth not just as a home but as a precious gift to cherish, protect, and nurture for generations to come.</p>
+                  </div>
                 </div>
-                <!-- <div class="homepage-banner-photo">
-                    <img src="resources/signup-banner.jpg">
-                </div> -->
-    
-            </div>
+              </div>
         </div>
-       
-        <div class="about-us">
-                <div class="about-us-pic-box">
-                    <img src="resources/img/bg6.jpg">
-                </div>
-                <div class="about-us-text-box">
-                    <h1>Pro Planet person</h1>
-                    <p>A "pro-planet person" is like a guardian of the Earth,a passionate defender of all things green and blue.They're the eco-warriors.They're the ones who hug trees and high-five the wind.They're not just about recycling; they're about reimagining our relationship with the planet.  In essence, a pro-planet person is someone who sees Earth not just as a home but as a precious gift to cherish, protect, and nurture for generations to come. </p>
-                </div>
-        </div>
-
-        <div class="homepage-goal-slider">
-                
-    
-        </div>
-        <div class="homepage-landscape-slider">
-
-        </div>
-
-        <div class="footer">
-
-        </div>
-    </div>
-</body>
+    </section>
+</div>
+<script src="./resources/js/script.js"></script>
+  </body>
 </html>
