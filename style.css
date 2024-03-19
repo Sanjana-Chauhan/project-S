@@ -11,6 +11,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.div-img{
+    width: 100%;
+}
 /* intro page css */
 .intro-container{
     width: 100%;
@@ -219,24 +222,17 @@ input:focus{
 .homepage-banner-photo{
     width: 45%;
 }
-.homepage-banner-photo img{
-    width: 100%;
-}
 
 .about-us{
     display: flex;
     width: 100%;
-    min-height: 90vh;
-    padding: 3rem 0;
+    margin: 3rem 0;
     background: rgb(241, 244, 241);
-    /* border: 2px solid black; */
 }
 .about-us-pic-box{
     width: 50%;
 }
-.about-us-pic-box img{
-    width: 100%;
-}
+
 .about-us-text-box{
     width: 50%;
     display: flex;
@@ -255,3 +251,38 @@ input:focus{
     font-size: 1.1rem;
     color: rgb(12, 161, 45);
 }
+.homepage-goal-slider{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgb(231, 236, 221);
+
+}
+.homepage-goal-slider h1{
+    text-align: center;
+    margin: .7rem;
+    color: var(--dark-green);
+    font-size: 2.5rem;
+}
+.card-holder{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 20%;
+}
+.card-text-box{
+    padding: .5rem;
+    text-align: center;
+}
+
+
