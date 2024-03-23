@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Sign up </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
     <div class="signup-container">
         <!-- Form box begins -->
         <div class="signup-form-box">
@@ -18,19 +18,20 @@
                 <!-- form  -->
               <div class="signup-form">
                 <p> Join the Movement, Be a Pro Planet Person!</p>
-                <h2>Login</h2>
-                <input type="email" placeholder="Enter your mail" name="userEmail" class="form-input">
-                <input type="password" placeholder="Enter your password" name="userPassword" class="form-input">                
+                <h2>Sign up</h2>
+                <input type="text" placeholder="Enter your name" id="userName" class="form-input" required>
+                <input type="email" placeholder="Enter your mail" id="signup-userEmail" class="form-input" required>
+                <input type="password" placeholder="Enter your password" id="signup-userPassword" class="form-input" required>                
                 <div class="inner-form">
                     <div>
                         <input type="checkbox" id="rememberMe"> <label for="rememberMe">Remember Me</label>
                     </div>
-                    <a href="#">forget password?</a>
+                   
                 </div>
-                <a href="Homepage.html" class="button-link"><button class="form-input login-but">Login</button> </a>
+                <a href="#" class="button-link"><button class="form-input login-but" onclick="signup()">Sign up</button> </a>
                 
                 
-                <span>New User? <a href="#">signup</a></span> 
+                <span>Already a User? <a href="login.html">Login</a></span> 
               </div>
               <!-- form ends -->
         </div>
@@ -41,5 +42,7 @@
                 <!-- banner -->
         </div>
     </div>
+    <script src="login.js"></script>
+    
 </body>
 </html>
