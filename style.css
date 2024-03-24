@@ -259,26 +259,3 @@ input:focus {
   font-size: 1.1rem;
   color: rgb(12, 161, 45);
 }
-
-/*Loader*/
-#loader {
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #72fa66;
-}
-
-#l-c {
-  color: #eaeaea;
-}
-
-#counter {
-  font-family: TT-Hoves, sans-serif;
-  font-size: 100px;
-}
