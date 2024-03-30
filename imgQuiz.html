@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quiz</title>
+    <link rel="stylesheet" href="./resources/css/quiz.css">
+    <script src="./resources/js/imgQuiz.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <header>
+            <div class="logo-container">
+                <img src="./resources/img/logo.png" alt="" class="logo-img">
+            </div>
+            <ul>
+                <li>
+                    <a href="./Homepage.html" id="home-button">Home</a>
+                </li>
+                <li>
+                    <a href="./Homepage.html#about" class="solo-button" id="about-button">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="solo-button" id="explore-button">Explore</a>
+                </li>
+                <li>
+                    <a class="solo-button highlight" href="./quiz.html" class="solo-button" id="activity-button">Activity</a>
+                </li>
+                <li>
+                    <a href="#" class="solo-button" id="eco-assist-button">Eco-Assist</a>
+                </li>
+                <li>
+                    <a href="#" class="solo-button" id="profile-button">Profile</a>
+                </li>
+                <li>
+                    <a href="./index.html" class="solo-button" id="logout-button">LogOut</a>
+                </li>
+            </ul>
+        </header>
+    </nav>
+    <div class="main">
+        <div class="quiz-section">
+            <div class="quiz-section-header">
+                <div class="quiz-title">
+                    <p> Image Quiz</p>
+                </div>
+                <div class="quiz-score">
+                    <p> Score : <span id="score">0</span></p>
+                </div>
+            </div>
+            <div class="quiz-container" id="quiz-container">
+                <div class="question-number">
+                    <p>Question No : <span id="question-number">0</span></p>
+                </div>
+                <div class="question-title">
+                    <p id="question-title"></p>
+                </div>
+                <div class="option-container option-container-img">
+                    <div class="option-btn" onclick="checkAnswer(0)">
+                        <p id="option1"></p>
+                    </div>
+                    <div class="option-btn" onclick="checkAnswer(1)">
+                        <p id="option2"></p>
+                    </div>
+                    <div class="option-btn" onclick="checkAnswer(2)">
+                        <p id="option3"></p>
+                    </div>
+                    <div class="option-btn" onclick="checkAnswer(3)">
+                        <p id="option4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
