@@ -1,3 +1,5 @@
+<!-- Sign up form  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,22 +17,19 @@
                     <h2>Pro Planet Person</h2>
               </div>
                 <!-- form  -->
-              <div class="signup-form">
+              <form class="signup-form" onsubmit="return validateSignupForm()" action="/login.html">
                 <p> Join the Movement, Be a Pro Planet Person!</p>
-                <h2>Login</h2>
-                <input type="email" placeholder="Enter your mail" name="userEmail" class="form-input">
-                <input type="password" placeholder="Enter your password" name="userPassword" class="form-input">                
-                <div class="inner-form">
-                    <div>
-                        <input type="checkbox" id="rememberMe"> <label for="rememberMe">Remember Me</label>
-                    </div>
-                    <a href="#">forget password?</a>
-                </div>
-                <a href="Homepage.html" class="button-link"><button class="form-input login-but">Login</button> </a>
+                <h2>Sign in</h2>
+                <input type="text" placeholder="Enter your name" id="userName" class="form-input">
+    
+                <input type="email" placeholder="Enter your mail" id="userEmail" class="form-input">
+                <input type="password" placeholder="Enter your password" id="userPassword" class="form-input">                
+               
+                <input type="submit" class="form-input login-but" id="login-button">
                 
                 
-                <span>New User? <a href="#">signup</a></span> 
-              </div>
+                <span>Already a user? <a href="login.html">Login</a></span> 
+            </form>
               <!-- form ends -->
         </div>
 
@@ -40,6 +39,7 @@
                 <!-- banner -->
         </div>
     </div>
-    <script src="./resources/js/script.js"></script>
+    <!-- <script src="./resources/js/script.js"></script> -->
+    <script src="resources/js/form-validation.js"></script>
 </body>
 </html>

@@ -32,7 +32,6 @@ nav, .heading_container{
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 nav .logo{
@@ -68,7 +67,6 @@ nav .logo span{
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
   border: 0;
   backdrop-filter: blur(0);
-  -webkit-backdrop-filter: blur(0);
 }
 .main-heading{
   font-size: 3rem;
