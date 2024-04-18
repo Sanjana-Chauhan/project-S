@@ -94,10 +94,47 @@ input:focus {
   background-color: var(--yellow-green);
   color: var(--white);
 }
-.signup-banner {
-  width: 50%;
-  background: url(resources/img/signup-banner.jpg);
-  background-size: cover;
+/* Banner will only appear when min-width: 961 */
+
+@media (min-width: 961px){
+  .signup-banner {
+    width: 50%;
+    background: url(resources/img/signup-banner.jpg);
+    background-size: cover;
+  }
 }
 /* sign up css ends */
 
+/* Responsive */
+@media screen and (max-width: 736px)
+{
+  body {
+    overflow: hidden;
+  }
+  .signup-container{
+    border-radius: 0;
+  }
+  .signup-form-header{
+    width: 400px;
+  }
+  .signup-form-header img{
+    width: 15%;
+  }
+  .signup-form-header h2{
+    font-size: 2rem;
+  }
+  .signup-form{
+    width: 400px;
+    margin-top: 150px;
+  }
+  .signup-form p h2 {
+    font-size: 2rem;
+  }
+  .signup-form h2{
+    margin-bottom: 10px;
+  }
+  .signup-form span{
+    margin-top: 10px;
+  }
+  
+}
