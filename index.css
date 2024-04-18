@@ -150,19 +150,56 @@ nav .logo span{
   border-radius: 1rem;
 }
 
-.circle-cursor {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 2px solid #000;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-  transition: transform 0.3s ease-in-out;
-  pointer-events: none;
-  z-index: 9999;
+/* Cursor to only appear when min-width: 961 */
+
+@media (min-width: 961px){
+  .circle-cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .circle-cursor.visible {
+    visibility: visible;
+  }
 }
 
-.circle-cursor.visible {
-  visibility: visible;
+/* Resposive */
+
+@media screen and (max-width: 736px)
+{
+    nav{
+      width: 60vh;
+      min-height: 5vh;
+    }
+    .nav-bar-div{
+      padding-left: 1vh;
+    }
+    .logo{
+      font-size: 1.5rem;
+    }
+    .heading_container{
+      width: 60vh;
+    }
+    .profile-img{
+      max-width: 250px;
+    }
+    .spacing{
+      height: 250px;
+    }
+    .content-heading {
+      display: flex;
+      align-items: center;
+  }
+  body {
+    background-size: cover;
+    background-position: right top;
+  }
 }
