@@ -110,6 +110,7 @@ input:focus {
 {
   body {
     overflow: hidden;
+    background: rgb(243, 247, 239);
   }
   .signup-container{
     border-radius: 0;
