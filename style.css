@@ -137,5 +137,11 @@ input:focus {
   .signup-form span{
     margin-top: 10px;
   }
+  .form-input{
+    width: 80%;
+  }
+  .signup-form .inner-form {
+    width: 80%;
+  }
   
 }
