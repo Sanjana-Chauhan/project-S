@@ -1,82 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="homepage.css">
-  </head>
-  <body>
-    <div class="section-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
     <section>
-        <div class="container">
-          <!--Navigation Bar-->
-          <header>
-            <div class="logo-container">
-                <img src="./resources/img/logo.png" alt="" class = "logo-img">
-            </div>    
-            <ul>
-              <li>
-                <a class="solo-button highlight" href="#" id="home-button">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="solo-button" id="about-button">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="solo-button" id="explore-button">Explore</a>
-              </li>
-              <li>
-                <a href="./activity.html" class="solo-button" id="activity-button">Activity</a>
-              </li>
-              <li>
-                <a href="./eco-assist.html" class="solo-button" id="eco-assist-button">Eco-Assist</a>
-              </li>
-              <li>
-                <a href="profile.html" class="solo-button" id="profile-button">Profile</a>
-              </li>
-              <li>
-                <a href="./index.html" class="solo-button" id="logout-button">LogOut</a>
-              </li>
-            </ul>
-          </header>
-          <div class="heading-container">
-            <div class="content">
-  
-              <h2 class="main-heading"><span class="highlight-green">Pro Planet</span><span class="wave">👋</span></h2>
-              <p class="heading-content">Uniting for earth: Our mission to save our planet and create a better future!</p>
-            </div>
-            <div class="img">
-              <div class="profile-img">
-                  <img src="./resources/img/save-the-planet.png" alt="" class="image" />
+        <div class="main-window">
+            <!-- NavBar -->
+            <header>
+                <div class="logo-container">
+                    <img src="./resources/img/logo.png" alt="" class="logo-img">
+                </div>
+                <ul>
+                    <li>
+                        <a class="solo-button highlight" href="#" id="home-button">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="solo-button" id="about-button">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#explore" class="solo-button" id="explore-button">Explore</a>
+                    </li>
+                    <li>
+                        <a href="./activity.html" class="solo-button" id="activity-button">Activity</a>
+                    </li>
+                    <li>
+                        <a href="./eco-assist.html" class="solo-button" id="eco-assist-button">Eco-Assist</a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="solo-button" id="profile-button">Profile</a>
+                    </li>
+                    <li>
+                        <a href="./index.html" class="solo-button" id="logout-button">LogOut</a>
+                    </li>
+                </ul>
+            </header>
+
+            <div id="home" class="content">
+                <div class="column">
+                    <h2 data-aos="fade-down" data-aos-duration="1000">
+                        <span class="highlight-green">Pro Planet</span>
+                        <span class="wave">👋</span>
+                    </h2>
+                    <h3 data-aos="fade-right" data-aos-duration="1000" class="column-text">
+                        Uniting for earth: Our mission to save our planet and create a better future!
+                    </h3>
+                </div>
+                <div data-aos="fade-up-right" data-aos-duration="1000" class="img">
+                    <img src="./resources/img/save-the-planet.png" alt="Image 1">
                 </div>
             </div>
-          </div>
-        </div>
-    </section>
-</div>
-<div class="section-2">
-    <section>
-        <div id = "about" class="container">
-              <div class="heading-container">
-                <div class="img">
-                    <div class="profile-img">
-                        <img src="./resources/img/bg4.png" alt="" class="image" />
-                      </div>
-                  </div>
-              <div class="content-2">
-                  <h2 class = "about-us-heading">
-                    <span class="highlight-pink">About Us</span>
-                  </h2>
-                  <div>
-                    <p class = "about-us-text">A "pro-planet person" is like a guardian of the Earth,a passionate defender of all things green and blue.They're the eco-warriors.They're the ones who hug trees and high-five the wind.</p>
-                    <p class = "about-us-text">They're not just about recycling; they're about reimagining our relationship with the planet.</p>
-                    <p class = "about-us-text">In essence, a pro-planet person is someone who sees Earth not just as a home but as a precious gift to cherish, protect, and nurture for generations to come.</p>
-                  </div>
+
+            <!-- 2nd Section -->
+            <div class="content" id="about">
+                <div data-aos="fade-right" data-aos-duration="1000" class="img">
+                    <img src="./resources/img/bg4.png" alt="Image 2">
                 </div>
-              </div>
+                <div class="column-2">
+                    <h2>
+                        <span class="highlight-skin">About us</span>
+                    </h2>
+                    <h3 class="column-text">A "pro-planet person" is like a guardian of the Earth,a passionate defender
+                        of all things green and blue.They're the eco-warriors.They're the ones who hug trees and
+                        high-five the wind.</h3>
+                    <br>
+                    <h3 class="column-text">They're not just about recycling; they're about reimagining our relationship
+                        with the planet.</h3>
+                    <br>
+                    <h3 class="column-text">In essence, a pro-planet person is someone who sees Earth not just as a home
+                        but as a precious gift to cherish, protect, and nurture for generations to come.</h3>
+
+                </div>
+            </div>
+            <h2 data-aos="fade-down" data-aos-duration="1500" class="explore-heading">
+                <span class="highlight-cyan">Explore</span>
+            </h2>
+            <div class="explore-cards-div">
+                <!-- Card 1 -->
+                <div data-aos="fade-right" data-aos-duration="1500" class="explore-card">
+                    <div class="explore-banner">
+                        <img src="" alt="Explore-Image-1">
+                    </div>
+                    <div class="explore-text-details">
+                        <a href="./activity.html">
+                            <h5 class="explore-text-heading">Activity</h5>
+                        </a>
+                        <p class="explore-text-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit pariatur ex voluptates earum! Officiis iusto cum porro repellat odit!
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div data-aos="fade-right" data-aos-duration="1500" class="explore-card" id = "explore">
+                    <div class="explore-banner">
+                        <img src="" alt="Explore-Image-1">
+                    </div>
+                    <div class="explore-text-details">
+                        <a href="./eco-assist.html">
+                            <h5 class="explore-text-heading">Eco-Assist</h5>
+                        </a>
+                        <p class="explore-text-desc">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus id quod saepe quae quia, inventore aliquid vitae adipisci fuga voluptate.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div data-aos="fade-right" data-aos-duration="1500" class="explore-card">
+                    <div class="explore-banner">
+                        <img src="" alt="Explore-Image-1">
+                    </div>
+                    <div class="explore-text-details">
+                        <a href="./profile.html">
+                            <h5 class="explore-text-heading">Profile</h5>
+                        </a>
+                        <p class="explore-text-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut blanditiis numquam placeat ducimus debitis animi saepe corrupti quia accusantium consectetur?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members -->
+            <h2 data-aos="fade-down" data-aos-duration="1500" class="explore-heading">
+                <span class="highlight-pink">Team members</span>
+            </h2>
+            <div class="team-members-div">
+                <!-- Member 1 -->
+                <div data-aos="fade-up" data-aos-duration="1500" class="member-card">
+                    <div class="member-pic">
+                        <img class="member-img" src="" alt="Member-pic">
+                    </div>
+                    <div class="member-detail">
+                        <h5 class="member-name">Sanjana</h5>
+                        <p class="member-about">Team Lead, Developer</p>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div data-aos="fade-up" data-aos-duration="1500" class="member-card">
+                    <div class="member-pic">
+                        <img class="member-img" src="" alt="Member-pic">
+                    </div>
+                    <div class="member-detail">
+                        <h5 class="member-name">Yash Duhan</h5>
+                        <p class="member-about">Developer</p>
+                    </div>
+                </div>
+                <!-- Member 3 -->
+                <div data-aos="fade-up" data-aos-duration="1500" class="member-card">
+                    <div class="member-pic">
+                        <img class="member-img" src="" alt="Member-pic">
+                    </div>
+                    <div class="member-detail">
+                        <h5 class="member-name">Shikhar Gupta</h5>
+                        <p class="member-about">Developer</p>
+                    </div>
+                </div>
+                <!-- Member 4 -->
+                <div data-aos="fade-up" data-aos-duration="1500" class="member-card">
+                    <div class="member-pic">
+                        <img class="member-img" src="" alt="Member-pic">
+                    </div>
+                    <div class="member-detail">
+                        <h5 class="member-name">Vishesh</h5>
+                        <p class="member-about">Developer</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-</div>
-<script src="./resources/js/script.js"></script>
-  </body>
+    <div class="button-top-div" id="top-btn">
+        <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <script>
+        // To remove/make the button visible when user's on 2nd column
+        var scrolBtn = document.querySelector("#top-btn");
+        window.addEventListener("scroll", function () {
+            let offset;
+            offset = window.pageYOffset;
+            if (offset > 300) {
+                scrolBtn.style.display = "block";
+            }
+            if (offset < 300) {
+                scrolBtn.style.display = "none";
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./resources/js/script.js"></script>
+</body>
 </html>
