@@ -98,3 +98,31 @@ nav ul li a.highlight {
     color: #fff;
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.05);
 }
+
+@media (max-width: 900px) {
+    nav {
+      position: fixed;
+      top: 10px;
+      width: calc(100% - 80px);
+      flex-direction: column;
+      padding: 10px;
+      margin-left: 30px;
+    }
+    nav ul {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: 2px;
+    }
+  
+    nav ul li a {
+      display: inline-block;
+    }
+    .quiz-wrapper{
+        margin-top: 400px;
+        margin-left: 30px;
+    }
+  }

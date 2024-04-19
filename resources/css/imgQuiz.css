@@ -129,10 +129,14 @@ nav {
 }
 
 @media (max-width: 900px) {
+  .quiz-section-header{
+    margin-bottom: 150px;
+  }
+  .main{
+    margin-top: -20px;
+    padding: 0px;
+  }
   .quiz-score{
     margin-right: 10px
-  }
-  .quiz-section-header{
-    margin-top: -30px;
   }
 }
