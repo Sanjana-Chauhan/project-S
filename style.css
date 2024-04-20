@@ -10,6 +10,7 @@
   --white: rgb(255, 255, 255);
   --dark-green: rgb(9, 103, 18);
 }
+
 * {
   font-family: "Nunito";
   margin: 0;
@@ -17,6 +18,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 /* sign up css */
 .signup-container {
   width: 100%;
@@ -25,26 +27,31 @@
   border-radius: 2rem;
   background: rgb(243, 247, 239);
 }
+
 .signup-form-box {
   padding: 1rem;
   width: 50%;
 }
+
 .signup-form-header {
   display: flex;
   align-items: center;
   width: 100%;
   color: var(--yellow-green);
 }
+
 .signup-form-header img,
 .logo {
   width: 20%;
   border-radius: 5rem;
 }
+
 .signup-form-header h2 {
   margin-left: 2rem;
   font-size: 3rem;
   width: 80%;
 }
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -56,14 +63,17 @@
   margin: 1.5rem auto;
   color: var(--yellow-green);
 }
+
 .signup-form p {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 .signup-form a {
   color: darkgreen;
 }
+
 .form-input {
   width: 60%;
   margin: 0.5rem;
@@ -72,11 +82,13 @@
   border: 1px solid var(--yellow-green);
   border-radius: 0.3rem;
 }
+
 input:focus {
   background-color: rgb(225, 242, 219);
   outline: none;
   border: 1px solid var(--yellow-green);
 }
+
 .signup-form .inner-form {
   display: flex;
   width: 60%;
@@ -84,6 +96,7 @@ input:focus {
   padding: 0.5rem;
   color: darkgreen;
 }
+
 .login-but {
   font-size: 1rem;
   background: none;
@@ -91,66 +104,82 @@ input:focus {
   border: 0.1rem solid var(--yellow-green);
   width: 60%;
 }
+
 .login-but:hover {
   background-color: var(--yellow-green);
   color: var(--white);
 }
+
 /* Banner will only appear when min-width: 961 */
 
-@media (min-width: 961px){
+@media (min-width: 961px) {
   .signup-banner {
     width: 50%;
     background: url(resources/img/signup-banner.jpg);
     background-size: cover;
   }
 }
+
 /* sign up css ends */
 
 /* Responsive */
-@media screen and (max-width: 736px)
-{
+@media screen and (max-width: 736px) {
   body {
     overflow: hidden;
     background: rgb(243, 247, 239);
   }
-  .signup-container{
+
+  .signup-container {
     border-radius: 0;
   }
-  .signup-form-header{
+
+  .signup-form-header {
     width: 400px;
   }
-  .signup-form-header img{
+
+  .signup-form-header img {
     width: 15%;
   }
-  .signup-form-header h2{
+
+  .signup-form-header h2 {
     font-size: 2rem;
   }
-  .signup-form{
+
+  .signup-form {
     width: 400px;
     margin-top: 150px;
   }
+
   .signup-form p h2 {
     font-size: 2rem;
   }
-  .signup-form h2{
+
+  .signup-form h2 {
     margin-bottom: 10px;
   }
-  .signup-form span{
+
+  .signup-form span {
     margin-top: 10px;
   }
-  .form-input{
+
+  .form-input {
     width: 80%;
   }
+
   .signup-form .inner-form {
     width: 80%;
   }
-  .alert-div{
-    width: 80%!important;
+
+  .alert-div {
+    width: 80% !important;
+  }
+  .back-button{
+    top: 6.5rem !important;
   }
 }
 
 /* Alert */
-.alert-div{
+.alert-div {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -159,7 +188,45 @@ input:focus {
   border-radius: .375rem;
   font-size: .875rem;
   color: #fff !important;
-  box-shadow: 0 0 1.25rem rgba(31,45,61,.05)!important;
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, .05) !important;
   background-color: #f25767 !important;
   width: 60%;
+}
+
+/* Back Button */
+.back-button {
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease;
+  z-index: 101 !important;
+  top: 8.5rem;
+  left: 1.5rem !important;
+  position: absolute !important;
+  display: inline-flex;
+  border-radius: 50% !important;
+  /* Button */
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: inset 0 1px 0 rgba(31, 45, 61, .15);
+  font-size: 1rem;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.feather {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
 }
