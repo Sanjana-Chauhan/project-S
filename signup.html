@@ -2,44 +2,51 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Sign up</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="signup-container">
-        <!-- Form box begins -->
-        <div class="signup-form-box">
-              <div class="signup-form-header">
-                    <img src="resources/img/logo.png">
-                    <h2>Pro Planet Person</h2>
-              </div>
-                <!-- form  -->
-              <form class="signup-form" onsubmit="return validateSignupForm()" action="./login.html">
-                <p> Join the Movement, Be a Pro Planet Person!</p>
-                <h2>Sign in</h2>
-                <input type="text" placeholder="Enter your name" id="userName" class="form-input">
-    
-                <input type="email" placeholder="Enter your mail" id="userEmail" class="form-input">
-                <input type="password" placeholder="Enter your password" id="userPassword" class="form-input">                
-               
-                <input type="submit" class="form-input login-but" id="login-button">
-                
-                
-                <span>Already a user? <a href="login.html">Login</a></span> 
-            </form>
-              <!-- form ends -->
+  <div class="signup-container">
+    <!-- Form box begins -->
+    <div class="signup-form-box">
+      <div class="signup-form-header">
+        <img src="resources/img/logo.png">
+        <h2>Pro Planet Person</h2>
+      </div>
+      <!-- form  -->
+      <form class="signup-form" onsubmit="return validateSignupForm()" action="./login.html">
+        <p> Join the Movement, Be a Pro Planet Person!</p>
+        <h2>Sign in</h2>
+        <!-- Alert Button -->
+        <div class="alert-div">
+          We are not accepting users at this time.
         </div>
+        <input type="text" placeholder="Enter your name" id="userName" class="form-input">
 
-        <!-- form box ends -->
+        <input type="email" placeholder="Enter your mail" id="userEmail" class="form-input">
+        <input type="password" placeholder="Enter your password" id="userPassword" class="form-input">
 
-        <div class="signup-banner">
-                <!-- banner -->
-        </div>
+        <input type="submit" class="form-input login-but" id="login-button">
+
+
+        <span>Already a user? <a href="login.html">Login</a></span>
+      </form>
+      <!-- form ends -->
     </div>
-    <!-- <script src="./resources/js/script.js"></script> -->
-    <script src="resources/js/form-validation.js"></script>
+
+    <!-- form box ends -->
+
+    <div class="signup-banner">
+      <!-- banner -->
+    </div>
+  </div>
+  <!-- <script src="./resources/js/script.js"></script> -->
+  <script src="resources/js/form-validation.js"></script>
 </body>
+
 </html>

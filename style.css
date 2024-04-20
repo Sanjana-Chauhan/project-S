@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "TT-Hoves";
-  src: url("./resources/fonts/TT-Hoves-Regular.ttf");
+  font-family: "Nunito";
+  src: url(./resources/fonts/Nunito-Regular.ttf);
 }
 
 :root {
@@ -11,6 +11,7 @@
   --dark-green: rgb(9, 103, 18);
 }
 * {
+  font-family: "Nunito";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -143,5 +144,22 @@ input:focus {
   .signup-form .inner-form {
     width: 80%;
   }
-  
+  .alert-div{
+    width: 80%!important;
+  }
+}
+
+/* Alert */
+.alert-div{
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .875rem .875rem;
+  border: 1px solid transparent;
+  border-radius: .375rem;
+  font-size: .875rem;
+  color: #fff !important;
+  box-shadow: 0 0 1.25rem rgba(31,45,61,.05)!important;
+  background-color: #f25767 !important;
+  width: 60%;
 }
