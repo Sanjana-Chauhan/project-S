@@ -474,3 +474,33 @@ header ul li a.highlight {
   line-height: 50px;
   color: #fff;
 }
+
+.member-social{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-text{
+  background: #55198b;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.social-text a{
+  text-decoration: none;
+  color: #f5f2f4;
+}
+
+.social-text:hover{
+  background: #8c43ce;
+}
